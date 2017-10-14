@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test-1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		th{
+			width: 60px;
+			height: 60px;
+		}
+		td{
+			width: 60px;
+			height: 60px;
+		}
+		input{
+			width: 45px;
+			height: 45px;
+		}
+		body{
+			text-align: center;
+		}
+		#inp1{
+			width: 250px;
+			text-align: right;
+		}
+	</style>
+	<script type="text/javascript" src="JS计算器.js"></script>
+</head>
+<body>
+<div>
+<table align="center" cellpadding="0" border="1px" cellspacing="1px">
+	<tr>
+		<th colspan="3">
+		<input id="inp1" type="text" value="" name="xianshi"/>
+		</th>
+		<th><input type="reset" value="c"  id="clear" onclick="inputClear(this)"></th>
+	</tr>
+	<tr>
+		<td><input type="button" value="1"  id="1" onclick="showdata(this);"></td>
+		<td><input type="button" value="2" id="2" onclick="showdata(this);"></td>
+		<td><input type="button" value="3" id="3" onclick="showdata(this);"></td>
+		<td><input type="button" value="+" id="add" onclick="showoper(this);"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="4"  id="4" onclick="showdata(this);"></td>
+		<td><input type="button" value="5" id="5" onclick="showdata(this);"></td>
+		<td><input type="button" value="6" id="6" onclick="showdata(this);"></td>
+		<td><input type="button" value="-" id="sub" onclick="showoper(this);"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="7"  id="7" onclick="showdata(this);"></td>
+		<td><input type="button" value="8" id="8" onclick="showdata(this);"></td>
+		<td><input type="button" value="9" id="9" onclick="showdata(this);"></td>
+		<td><input type="button" value="*" id="mul" onclick="showoper(this);"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="0"  id="7" onclick="showdata(this);"></td>
+		<td><input type="button" value="." id="point"
+		onclick="showdata(this);"></td>
+		<td><input type="button" value="=" id="equ" onclick="inputEquel(this);"></td>
+		<td><input type="button" value="/" id="div" onclick="showoper(this);"></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
